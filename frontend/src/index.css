@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrongInputAnimation {
+    border-color: #ff0000;
+    animation: wrongInput 0.5s ease-in-out;
+}
+
+@keyframes wrongInput {
+    0% { transform: none; }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: none; }
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+    border-radius: 8px;
+}
+
+.bg-pattern {
+    background-color: #f8f8f8;
+    background-image: 
+        radial-gradient(circle at 20px 20px, #e0e0e0 2px, transparent 0);
+    background-size: 40px 40px;
+}
